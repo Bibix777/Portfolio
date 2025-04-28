@@ -1,6 +1,17 @@
 @import 'utils/variables';
 @import 'components/type';
 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.grid > * {
+    grid-column: 1 / -1;
+}
 
 
 .lune{
@@ -17,3 +28,17 @@
     top: 0;
 }
 
+.berserk{
+    position: absolute;
+    z-index: -10;
+    left: 200px;
+    top: 30%;
+}
+
+.nuageAnime{
+    position: absolute;
+    z-index: -10;
+    top: 61%;
+    scale: 0.5;
+    left: 131px;
+}

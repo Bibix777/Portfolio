@@ -3,6 +3,7 @@ body {
   font-size: $size-text;
   line-height: 1.5;
   color: $c-text;
+  background-color: black;
 }
 
 .title {
@@ -17,4 +18,20 @@ h1{
   display: flex;
   text-align: center;
   padding-top: 100px;
+}
+
+h2{
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-size: 25px;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+p{
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: white;
+  opacity: 0.8;
 }
