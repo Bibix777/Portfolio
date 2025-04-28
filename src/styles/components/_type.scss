@@ -8,3 +8,13 @@ body {
 .title {
   color: $c-alt;
 }
+
+h1{
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-size: 49px;
+  color: white;
+  display: flex;
+  text-align: center;
+  padding-top: 100px;
+}
