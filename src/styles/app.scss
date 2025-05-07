@@ -13,6 +13,11 @@
     grid-column: 1 / -1;
 }
 
+
+.tgridend{
+    grid-column: 1/5;
+}
+
 /* Images */
 
 .lune-container {
@@ -67,11 +72,29 @@
 }
 
 
+.PruxImg{
+    width: 100%;
+    padding-top: 100px; 
+    overflow: hidden;
+    height: auto; 
+    margin-left: -20vw;
+}
+
+
+.dataplayImg{
+    width: 100%;
+    padding-top: 100px; 
+    overflow: hidden;
+    height: auto; 
+    margin-right: 100vw;
+    
+}
+
 /* Code-Pen */
 
 .menu-wrapper {
     width: 100%;
-    overflow: hidden;
+   
     position: relative;
   }
   
@@ -79,15 +102,18 @@
     display: flex;
     width: max-content;
     animation: scroll-left 20s linear infinite;
+    
   }
   
   .menu-content span {
     white-space: nowrap;
     color: white;
+    
   }
   
   .menu-content:hover {
     animation-play-state: paused; /* Ici tu stop le texte au passage de la souris */
+    
 }
 
   @keyframes scroll-left {
