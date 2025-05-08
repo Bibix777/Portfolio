@@ -74,7 +74,7 @@
 
 .PruxImg{
     width: 100%;
-    padding-top: 100px; 
+    padding-top: 20px; 
     overflow: hidden;
     height: auto; 
     margin-left: -20vw;
@@ -83,25 +83,41 @@
 
 .dataplayImg{
     width: 100%;
-    padding-top: 100px; 
+    padding-top: 20px; 
     overflow: hidden;
     height: auto; 
     margin-right: 100vw;
     
 }
 
+.DesignF{
+  width: 100%;
+  padding-top: 20px; 
+  overflow: hidden;
+  height: auto; 
+  margin-left: -20vw;
+}
+
+
 /* Code-Pen */
 
 .menu-wrapper {
     width: 100%;
-   
     position: relative;
+    
   }
   
   .menu-content {
     display: flex;
     width: max-content;
     animation: scroll-left 20s linear infinite;
+    opacity: 0.8;
+  }
+
+  .menu-content02 {
+    display: flex;
+    width: max-content;
+    animation: scroll-right 20s linear infinite;
     
   }
   
@@ -113,7 +129,10 @@
   
   .menu-content:hover {
     animation-play-state: paused; /* Ici tu stop le texte au passage de la souris */
-    
+  }
+
+  .menu-content02:hover {
+    animation-play-state: paused; /* Ici tu stop le texte au passage de la souris */
 }
 
   @keyframes scroll-left {
@@ -122,5 +141,14 @@
     }
     100% {
       transform: translateX(-50%);
+    }
+  }
+
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%); // Déplace le contenu vers la droite
     }
   }
