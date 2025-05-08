@@ -32,6 +32,12 @@ h2{
 .h2_projet{
   padding-top: 100px;
   padding-bottom:0px ;
+  
+}
+
+.h2_footer{
+  text-align: center;
+  padding-bottom: 0px;
 }
 
 p{
@@ -44,4 +50,24 @@ p{
 
 body {
   overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;;
+}
+
+li{
+  padding-bottom: 10px;
+}
+
+a {
+  color: white;
+  opacity: 0.8;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.copyright{
+  text-align: center;
 }

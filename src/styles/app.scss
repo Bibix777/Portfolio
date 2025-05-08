@@ -13,9 +13,8 @@
     grid-column: 1 / -1;
 }
 
-
-.tgridend{
-    grid-column: 1/5;
+.tgrid01{
+    grid-column: 1 / 3;
 }
 
 /* Images */
@@ -98,7 +97,9 @@
   margin-left: -20vw;
 }
 
-
+.IconeR {
+  
+ }
 /* Code-Pen */
 
 .menu-wrapper {
@@ -111,7 +112,6 @@
     display: flex;
     width: max-content;
     animation: scroll-left 20s linear infinite;
-    opacity: 0.8;
   }
 
   .menu-content02 {
@@ -152,3 +152,22 @@
       transform: translateX(0%); // Déplace le contenu vers la droite
     }
   }
+
+  /* FOOTER */
+
+  .footer-line {
+    width: 100%;
+    height: 1px; 
+    background-color: #ffffff;
+    margin-top: 50px;
+    opacity: 0.5;
+  }
+
+  .footer-section {
+    grid-column: 3 / 5;
+  }
+  .footer-section02{
+    grid-column: 2/4;
+    text-align: center;
+  }
+
