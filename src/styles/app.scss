@@ -27,6 +27,8 @@
     z-index: -20;
     margin-left: -50vw;
     margin-right: -50vw;
+    margin-top: -2vw;
+   
    
 }
 
@@ -35,31 +37,17 @@
     position: relative;
     left: -25%;   
     top: -200px;
+    margin-top: 0px;
+    height: 1200px;
+    object-fit: cover;
 }
 
-
-
-.vecteur-container {
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-    z-index: -10;
-    top: 0;
-}
-
-.vecteur {
-    position: relative;
-    width: 100%;    
-    height: auto;  
-    top: 0;
-    left: 0;
-}
 
 .berserk{
     position: absolute;
     z-index: -10;
     left: 200px;
-    top: 40%;
+    top: 50%;
 }
 
 .nuageAnime{
@@ -68,6 +56,9 @@
     top: 61%;
     scale: 0.5;
     left: 131px;
+    top: 80%;
+    scale: 0.5;
+   
 }
 
 
@@ -97,10 +88,25 @@
   margin-left: -20vw;
 }
 
-.IconeR {
-  
- }
-/* Code-Pen */
+
+/* IMAGE ZOOM aider d'une IA*/
+
+.projectImg {
+  overflow: hidden; 
+  display: inline-block; 
+}
+
+.transImg {
+  width: 100%;
+  transition: transform 0.5s ease-in-out; 
+}
+
+.transImg:hover {
+  transform: scale(1.1); 
+}
+
+
+ /* Code-Pen */
 
 .menu-wrapper {
     width: 100%;
@@ -128,11 +134,11 @@
   }
   
   .menu-content:hover {
-    animation-play-state: paused; /* Ici tu stop le texte au passage de la souris */
+    animation-play-state: paused;
   }
 
   .menu-content02:hover {
-    animation-play-state: paused; /* Ici tu stop le texte au passage de la souris */
+    animation-play-state: paused; 
 }
 
   @keyframes scroll-left {
@@ -149,9 +155,44 @@
       transform: translateX(-50%);
     }
     100% {
-      transform: translateX(0%); // Déplace le contenu vers la droite
+      transform: translateX(0%); 
     }
   }
+
+
+  .projet_fleche{
+    display: flex;
+    align-items: center; 
+  }
+
+  /* NAV */
+
+  .nav_portfolio{
+    position: fixed;
+    z-index: 20;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 188px;
+    height: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    }
+
+  .nav-lien{
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-lien a:hover{
+    color: #19496D;
+  }
+
+  
 
   /* FOOTER */
 
@@ -170,4 +211,7 @@
     grid-column: 2/4;
     text-align: center;
   }
+
+
+  
 
