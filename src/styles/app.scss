@@ -50,16 +50,6 @@
     top: 50%;
 }
 
-.nuageAnime{
-    position: absolute;
-    z-index: -10;
-    top: 61%;
-    scale: 0.5;
-    left: 131px;
-    top: 80%;
-    scale: 0.5;
-   
-}
 
 
 .PruxImg{
@@ -71,13 +61,12 @@
 }
 
 
-.dataplayImg{
-    width: 100%;
-    padding-top: 20px; 
-    overflow: hidden;
-    height: auto; 
-    margin-right: 100vw;
-    
+.dataplayImg {
+  width: 100%;
+  padding-top: 20px;
+  overflow: hidden;
+  height: auto;
+  margin-left: 20vw; 
 }
 
 .DesignF{
@@ -88,6 +77,10 @@
   margin-left: -20vw;
 }
 
+.fleche{
+  padding-top: 10px;
+ 
+}
 
 /* IMAGE ZOOM aider d'une IA*/
 
@@ -98,7 +91,8 @@
 
 .transImg {
   width: 100%;
-  transition: transform 0.5s ease-in-out; 
+  transition: transform 0.5s ease-in-out;
+   
 }
 
 .transImg:hover {
@@ -111,19 +105,20 @@
 .menu-wrapper {
     width: 100%;
     position: relative;
+    overflow: hidden;
     
   }
   
   .menu-content {
     display: flex;
     width: max-content;
-    animation: scroll-left 20s linear infinite;
+    animation: scroll-left 30s linear infinite;
   }
 
   .menu-content02 {
     display: flex;
     width: max-content;
-    animation: scroll-right 20s linear infinite;
+    animation: scroll-right 30s linear infinite;
     
   }
   
@@ -162,8 +157,10 @@
 
   .projet_fleche{
     display: flex;
-    align-items: center; 
+    align-items: center;
   }
+
+
 
   /* NAV */
 
@@ -181,11 +178,13 @@
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
+  
     }
 
   .nav-lien{
     display: flex;
     gap: 20px;
+   
   }
 
   .nav-lien a:hover{
@@ -210,8 +209,66 @@
   .footer-section02{
     grid-column: 2/4;
     text-align: center;
+
   }
 
 
+  @media (min-width: 800px){
+   
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      column-gap: 30px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .lune {  
+      top: -150px;
+      margin-top: 0px;
+      height: 1200px;
+      object-fit: cover;
+   }
+
+   .nav_portfolio{
+    width: 230px;
+    height: 30px;
+   }
+
+    .tagrid{
+      grid-column: 1 / 5;
+    }
+
+    .tagrid1-2{
+      grid-column: 1 / 2;
+    }
+
+    .tagrid2-3{
+      grid-column: 2 / 3;
+    }
+
+    .tagrid3-4{
+      grid-column: 3 / 4;
+    }
+
+    .tagrid4-5{
+      grid-column: 4 /5;
+    }
+
+    .footer-section02{
+      grid-column: 2/5;
+      text-align: center;
+    }
+
+
+    .berserk{
+      top: 60%;
+      left: 250px;
+    }
+}
+
+@media (min-width: 1200px){
+
   
 
+}
