@@ -14,16 +14,21 @@ body {
   color: $c-alt;
 }
 
-h1{
+.title {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-size: 51px;
   color: white;
-  display: flex;
-  text-align: center;
-  justify-content: center;
   padding-top: 100px;
   margin-top: 0px;
+  display: inline-block;
+  text-align: center;
+   
+}
+
+.i-container {
+  position: relative;
+  display: inline-block;
 }
 
 h2{
@@ -122,7 +127,7 @@ a {
 
 
 @media (min-width: 580px){
-  h1{
+  .title{
       font-size: 61px;
   }
 
@@ -143,7 +148,7 @@ a {
    
 }
 
-h1{
+.title{
   font-size: 75px;
 }
 
@@ -173,7 +178,7 @@ a{
 }
 
 
-h1{
+.title{
   font-size: 86px;
 }
 
