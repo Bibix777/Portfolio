@@ -45,13 +45,21 @@
     object-fit: cover;
   }
 
-
-.berserk{
-    position: absolute;
-    z-index: -10;
-    left: 200px;
-    top: 50%;
+  .stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130%;
+  z-index: -1; 
+  background-image: url('../assets/images/Janus/Stars.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
+
+
 
 
 
@@ -82,6 +90,7 @@
 
 .fleche{
   padding-top: 10px;
+  width:auto;
  
 }
 
@@ -102,8 +111,11 @@
   transform: scale(1.1); 
 }
 
+.social-icon {
+  width: auto;
+    }
 
- /* Code-Pen */
+/* Code-Pen */
 
 .menu-wrapper {
     width: 100%;
@@ -128,6 +140,7 @@
   .menu-content span {
     white-space: nowrap;
     color: white;
+    font-size: 25px;
    
     
   }
@@ -162,6 +175,7 @@
   .projet_fleche{
     display: flex;
     align-items: center;
+    width: auto;
   }
 
 
@@ -193,6 +207,16 @@
   transform-origin: center center;
 }
 
+.spinner02 {
+  position: absolute;
+  top: 23.2em;
+  transform: translateX(-50%);
+  width: 1.5em;
+  height: auto;
+  left: 210px;
+  animation: rotate 2.5s linear infinite;
+  transform-origin: center center;
+}
 
 
 
@@ -281,6 +305,14 @@
       grid-column: 1 / 5;
     }
 
+    .tagrid2-5{
+      grid-column: 2 / 5;
+    }
+
+    .tagrid1-3{
+      grid-column: 1 / 3;
+    } 
+
     .tagrid1-4{
       grid-column: 1 / 4;
     }
@@ -297,16 +329,49 @@
       grid-column: 3 / 4;
     }
 
+    .tagrid3-6{
+      grid-column: 3 / 6;
+    }
+
     .tagrid4-5{
       grid-column: 4 /5;
     }
+
+    .tagrid4-6{
+      grid-column: 4 / 6;
+    } 
 
     .tagrid3-8{
       grid-column: 3 / 8;
     }
 
-    
+    .donnee , .panneau,.imageSIU,.imagefactuelle {
+    align-self: center;
+    max-width: calc(100% + 30px);     
+    transform: translateX(30px);
+    height: auto;
+    }
 
+    .centerp{
+      align-self: center;
+    }
+
+   .donnee02, .imagepub {
+    align-self: center;
+    justify-self: start;
+    margin: 0px;
+    padding: 0px;
+    width: calc(100% + 30px);
+    margin-left: -30px; 
+    height: auto;
+    }
+
+    .menu-content span{
+      font-size: 50px;
+      margin-top: 80px;
+      margin-bottom: 80px;
+      padding: 0;
+    }
     
 
     .berserk{
@@ -318,6 +383,7 @@
       width: 30px; 
       height: 30px;
       padding-top: 10px;
+      width: auto;
     }
 }
 
@@ -331,7 +397,9 @@
     padding-right: 30px;
   }
 
+  .menu-content span{
 
+  }
 
 
 
@@ -345,12 +413,23 @@
     left: 400px;
   }
 
+  .dgrid1-5{
+    grid-column: 1 / 5;
+  }
+  .dgrid1-4{
+    grid-column: 1 / 4;
+  }
+
   .dgrid2-3{
     grid-column: 2 / 3;
   }
 
   .dgrid3-4{
     grid-column: 3 / 4;
+  }
+
+  .dgrid3-6{
+    grid-column: 3 / 6;
   }
 
   .dgrid4-5{
@@ -361,13 +440,59 @@
     grid-column: 5 / 6;
   }
 
+  .dgrid5-8{
+    grid-column: 5 / 8;
+  }
+
+  .dgrid4-7{
+    grid-column: 4 / 7;
+  }
+
   .dgrid4-8{
     grid-column: 4 / 8;
+  }
+
+  .dgrid1-7{
+    grid-column: 1 / 7;
   }
 
   .social-icon {
     width: 40px; 
     height: 40px;
   }
-  
+
+  .donnee , .panneau, .imageSIU,.imagefactuelle {
+    align-self: center;
+    justify-self: start;
+    padding: 0;
+    margin: 0;
+    width: calc(100% + 40px);
+    margin-left: 10px;
+    height: auto;
+    }
+
+    
+
+    .donnee02 {
+    align-self: center;
+    justify-self: start;
+    margin: 0px;
+    padding: 0px;
+    width: calc(100% + 40px);
+    margin-left: -40px; 
+    height: auto;
+    }
+
+  .menu-content span{
+  font-size: 103px;
+}
+}
+
+/* Dataplay */
+
+img{
+    width: 100%;
+    height: auto;
+    
+    
 }
