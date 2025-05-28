@@ -193,7 +193,13 @@
   align-items: center;
 }
 
-
+.container02 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
 
 
 .spinner {
@@ -207,13 +213,26 @@
   transform-origin: center center;
 }
 
+
+
 .spinner02 {
   position: absolute;
-  top: 23.2em;
+  top: 23.2em; /* attention : pas très flexible */
+  left: 30%; /* centré horizontalement */
   transform: translateX(-50%);
   width: 1.5em;
   height: auto;
-  left: 210px;
+  animation: rotate 2.5s linear infinite;
+  transform-origin: center center;
+}
+
+.spinner03{
+   position: absolute;
+  top: 5em; /* attention : pas très flexible */
+  left: 70%; /* centré horizontalement */
+  transform: translateX(-50%);
+  width: 1.5em;
+  height: auto;
   animation: rotate 2.5s linear infinite;
   transform-origin: center center;
 }
