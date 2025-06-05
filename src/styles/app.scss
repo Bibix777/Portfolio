@@ -1,6 +1,10 @@
 @import 'utils/variables';
 @import 'components/type';
 
+$secondary-color:#2b79b5;
+
+
+
 .grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -22,7 +26,7 @@
     grid-column: 1 / 4;
 }
 
-.tgrid2--1{
+.tgrid2-1{
     grid-column: 2 / -1;
 }
 /* Images */
@@ -44,6 +48,7 @@
     position: relative;
     object-fit: cover;
   }
+
 
   .stars {
   position: absolute;
@@ -115,7 +120,9 @@
   width: auto;
     }
 
-/* Code-Pen */
+
+
+/* CODE-PEN */
 
 .menu-wrapper {
     width: 100%;
@@ -178,8 +185,36 @@
     width: auto;
   }
 
+.spancr{
+  color: $secondary-color;
+}
 
- /*  Code Pen étoile */
+
+  /* TRANSITION */
+  @keyframes pageAnimationBloc2 {
+    to {
+      transform: skew(0deg) translateX(0);
+    }
+  }
+
+  .bloc2 {
+    position: fixed;
+    width: 140vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: $secondary-color;
+    top: 0;
+    left: -200px;
+    transform: skew(0deg) translateX(-100%);
+    pointer-events: none;
+  }
+
+  .pageAnimation .bloc2 {
+    animation: pageAnimationBloc2 0.6s ease forwards;
+  }
+
+ 
+/*  Code Pen étoile */
 
 @keyframes rotate {
   0% { transform: rotate(0deg); }
@@ -268,7 +303,7 @@
   }
 
   .nav-lien a:hover{
-    color: #2b79b5;
+    color: $secondary-color;
   }
 
   
@@ -396,10 +431,7 @@
     }
     
 
-    .berserk{
-      top: 60%;
-      left: 250px;
-    }
+   
 
     .social-icon {
       width: 30px; 
@@ -449,6 +481,10 @@
 
   .dgrid3-4{
     grid-column: 3 / 4;
+  }
+
+  .dgrid2-6{
+    grid-column: 2/6;
   }
 
   .dgrid3-6{

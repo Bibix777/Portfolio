@@ -53,7 +53,7 @@ header {
   display: inline-block;
 }
 
-h2{
+h2, .h1-credit{
   font-family: "Boldonse", system-ui;
   font-weight: 400;
   font-size: 25px;
@@ -153,13 +153,28 @@ a {
   
 }
 
+.projet_h2{
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding: 0;
+  color: white;
+  font-family: "Boldonse", system-ui;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
 
 @media (min-width: 580px){
   .title{
       font-size: 61px;
   }
 
-  h2{
+  h2, .h1-credit{
       font-size: 37px;
   }
   .a_style{
@@ -186,11 +201,15 @@ a {
   font-size: 75px;
 }
 
-h2{
+h2, .h1-credit{
   font-size: 50px;
   margin-top: 80px;
   margin-bottom: 80px;
   padding: 0;
+}
+
+.projet_h2{
+  font-size: 50px;
 }
 
 
@@ -225,13 +244,17 @@ a{
   font-size: 86px;
 }
 
-h2{
+h2,.h1-credit {
   font-size: 72px;
 }
 
 .h2_projet{
   padding-bottom:103px ;
   
+}
+
+.projet_h2{
+  font-size: 72px;
 }
 
 h3{
