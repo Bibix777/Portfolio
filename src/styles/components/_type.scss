@@ -1,3 +1,5 @@
+$secondary-color: #2b79b5;
+
 html {
   scroll-behavior: smooth;
 }
@@ -119,7 +121,7 @@ li{
 }
 
 a {
-  color: #456b88 ;
+  color:$secondary-color ;
   opacity: 0.8;
   text-decoration: none;
   font-size: 13px;
@@ -140,7 +142,7 @@ a {
   margin: 0;
   opacity: 1;
   margin-top: 10px;
-  color: #456b88;
+  color: $secondary-color;
 }
 
 .voirprojet02{
