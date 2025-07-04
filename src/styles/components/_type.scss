@@ -171,6 +171,22 @@ a {
 
 }
 
+.projet_h2_{
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding: 0;
+  color: white;
+  font-family: "Boldonse", system-ui;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  
+
+}
+
 
 
 
@@ -214,7 +230,7 @@ h2, .h1-credit{
   padding: 0;
 }
 
-.projet_h2{
+.projet_h2, .projet_h2_{
   font-size: 50px;
 }
 
@@ -254,12 +270,12 @@ h2,.h1-credit {
   font-size: 72px;
 }
 
-.h2_projet{
+.h2_projet, .projet_h2_{
   padding-bottom:103px ;
   
 }
 
-.projet_h2{
+.projet_h2, .projet_h2_{
   font-size: 72px;
 }
 
