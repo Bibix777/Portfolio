@@ -5,7 +5,9 @@
 
 $secondary-color:#2b79b5;
 
-
+.section{
+  overflow-x: hidden;
+}
 
 .grid{
     display: grid;
@@ -60,7 +62,6 @@ $secondary-color:#2b79b5;
   .menu-content span {
     white-space: nowrap;
     color: white;
-    font-size: 25px;
     overflow-x: hidden;
    
     

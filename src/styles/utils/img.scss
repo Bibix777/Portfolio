@@ -3,20 +3,19 @@
 
 .lune-container {
     position: absolute;
-    width: 400vw;
+    width: 100%;
     overflow: hidden;
-    height: auto; 
+    height: 100%; 
     z-index: -20;
-    margin-left: -50vw;
-    margin-right: -50vw;
     margin-top: -2vw;
    
    
 }
 .lune {
-    width: 50%; 
-    position: relative;
-    object-fit: cover;
+     width: 100%;         /* l'image prend toute la largeur du conteneur */
+    height: 100%;        /* l'image prend toute la hauteur */
+    object-fit: cover;   /* garde les proportions et couvre le conteneur */
+    display: block; 
   }
 
 
